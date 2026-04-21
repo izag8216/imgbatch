@@ -1,73 +1,7 @@
 # imgbatch
 
 <p align="center">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="320" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="100%" stop-color="#111827"/>
-    </linearGradient>
-    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#5eead4"/>
-      <stop offset="100%" stop-color="#0d9488"/>
-    </linearGradient>
-    <linearGradient id="c2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#fdba74"/>
-      <stop offset="100%" stop-color="#ea580c"/>
-    </linearGradient>
-    <linearGradient id="c3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f1f5f9"/>
-      <stop offset="100%" stop-color="#64748b"/>
-    </linearGradient>
-    <filter id="sh" x="-25%" y="-25%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
-    </filter>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="40" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-  </defs>
-  <rect width="800" height="320" fill="url(#bg)"/>
-  <circle cx="400" cy="160" r="220" fill="#0f172a" filter="url(#glow)" opacity="0.6"/>
-
-  <!-- Card 1 -->
-  <g transform="translate(170, 65) rotate(-8)" filter="url(#sh)">
-    <rect width="190" height="150" rx="18" fill="url(#c1)"/>
-    <rect x="2" y="2" width="186" height="146" rx="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-    <path d="M0 150 L65 85 L115 125 L190 65 L190 150 Z" fill="rgba(0,0,0,0.12)"/>
-    <circle cx="145" cy="45" r="18" fill="rgba(255,255,255,0.25)"/>
-    <rect x="14" y="14" width="28" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
-    <circle cx="22" cy="22" r="4" fill="rgba(255,255,255,0.5)"/>
-  </g>
-
-  <!-- Card 2 -->
-  <g transform="translate(290, 95) rotate(5)" filter="url(#sh)">
-    <rect width="190" height="150" rx="18" fill="url(#c2)"/>
-    <rect x="2" y="2" width="186" height="146" rx="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-    <path d="M0 150 L55 95 L105 135 L190 75 L190 150 Z" fill="rgba(0,0,0,0.12)"/>
-    <circle cx="135" cy="50" r="16" fill="rgba(255,255,255,0.25)"/>
-    <rect x="14" y="14" width="28" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
-    <circle cx="22" cy="22" r="4" fill="rgba(255,255,255,0.5)"/>
-  </g>
-
-  <!-- Card 3 -->
-  <g transform="translate(410, 55) rotate(-3)" filter="url(#sh)">
-    <rect width="190" height="150" rx="18" fill="url(#c3)"/>
-    <rect x="2" y="2" width="186" height="146" rx="16" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
-    <path d="M0 150 L75 90 L125 120 L190 60 L190 150 Z" fill="rgba(0,0,0,0.1)"/>
-    <circle cx="150" cy="42" r="17" fill="rgba(0,0,0,0.08)"/>
-    <rect x="14" y="14" width="28" height="20" rx="4" fill="rgba(0,0,0,0.06)"/>
-    <circle cx="22" cy="22" r="4" fill="rgba(0,0,0,0.15)"/>
-  </g>
-
-  <!-- Decorative particles -->
-  <circle cx="120" cy="80" r="5" fill="#334155"/>
-  <circle cx="660" cy="240" r="7" fill="#334155"/>
-  <circle cx="700" cy="100" r="4" fill="#475569"/>
-  <circle cx="95" cy="260" r="6" fill="#475569"/>
-  <circle cx="680" cy="70" r="3" fill="#334155"/>
-  <circle cx="130" cy="250" r="4" fill="#334155"/>
-</svg>
+  <img src="assets/header.svg" width="100%" alt="imgbatch header">
 </p>
 
 <p align="center">
