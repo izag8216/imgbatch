@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "imgbatch"
+version = "0.1.0"
+description = "Batch image resizer, converter, and renamer with EXIF-aware patterns"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+    { name = "fuku", email = "fuku@example.com" },
+]
+keywords = ["image", "batch", "resize", "convert", "rename", "cli", "pillow"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "click>=8.0",
+    "Pillow>=10.0",
+    "pillow-heif>=0.15",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+imgbatch = "imgbatch.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/izag8216/imgbatch"
+Repository = "https://github.com/izag8216/imgbatch"
+Issues = "https://github.com/izag8216/imgbatch/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/imgbatch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--cov=imgbatch --cov-report=term-missing --cov-fail-under=80"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "W"]
+
+[tool.coverage.run]
+source = ["src/imgbatch"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
